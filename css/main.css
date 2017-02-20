@@ -14,7 +14,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Anton', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -23,6 +23,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #000;
 }
 ol, ul {
 	list-style: none;
@@ -38,4 +39,20 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/*CUSTOM STYLING*/
+nav img, h2{
+	display: inline-block;
+	color: #008A53;
+	letter-spacing: 1px;
+}
+
+nav {
+	text-align: center;
+	margin: 5em;
+}
+
+span {
+	color: #72C166;
 }
