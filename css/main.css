@@ -14,7 +14,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
-	font-family: 'Anton', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,8 +55,36 @@ p {
 nav {
 	text-align: center;
 	margin: 4em;
+	font-weight: 700;
 }
 
 span {
 	color: #72C166;
+}
+
+textarea[type=text] {
+	font-size: .85em;
+	padding: .65em 1em;
+	border-radius: .3em;
+	outline: 0;
+	border: 1px solid #dcdcdc;
+  	margin-right: 1em;
+  	width: 70%;
+  	margin: auto;
+  	display: block;
+  	font-family: 'Open Sans', sans-serif;
+  	background-color: #6A5B5E;
+  	border-color: transparent;
+  	color: #fff;
+  	height: 10em;
+  	text-align: left;
+}
+
+button {
+	color: white;
+	border-radius: 3px;
+	border: solid 1px;
+	border-color: transparent;
+	cursor: pointer;
+	background-color: #72C166;
 }
