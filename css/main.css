@@ -72,7 +72,7 @@ textarea[type=text] {
 	outline: 0;
 	border: 1px solid #dcdcdc;
   	margin-right: 1em;
-  	width: 70%;
+  	width: 100%;
   	margin: auto;
   	display: block;
   	font-family: 'Open Sans', sans-serif;
@@ -90,7 +90,7 @@ input[type=text] {
 	outline: 0;
 	border: 1px solid #dcdcdc;
   	margin-right: 1em;
-  	width: 70%;
+  	width: 100%;
   	margin: auto;
   	display: block;
   	font-family: 'Open Sans', sans-serif;
@@ -107,5 +107,9 @@ input[type=text] {
 	cursor: pointer;
 	background-color: #72C166;
 	padding: 0.5em 1em;
-	margin: 0.5em 0 0.5em 14.2em;
+	margin: 0.5em 0 0.5em 0;
+}
+
+.fullPost {
+	margin: 0 14em 1em 14em;
 }
