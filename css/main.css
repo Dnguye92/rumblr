@@ -23,7 +23,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: #000;
+	background-color: #F35E5E;
 }
 ol, ul {
 	list-style: none;
@@ -42,7 +42,7 @@ table {
 }
 
 /*CUSTOM STYLING*/
-nav img, h2{
+nav img, h1{
 	display: inline-block;
 	color: #008A53;
 	letter-spacing: 1px;
@@ -50,7 +50,7 @@ nav img, h2{
 
 nav {
 	text-align: center;
-	margin: 5em;
+	margin: 4em;
 }
 
 span {
