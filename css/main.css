@@ -116,3 +116,7 @@ input[type=text] {
 .fullPost {
 	margin: 0 14em 1em 14em;
 }
+
+.bodyContent {
+	font-size: 18px;
+}
