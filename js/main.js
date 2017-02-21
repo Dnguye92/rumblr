@@ -3,15 +3,22 @@ const addTextArea = document.querySelector('textarea.addPostInput');
 const addPostButton = document.querySelector('button.addPostButton');
 
 addPostButton.addEventListener('click', () => {
-	let div = document.getElementsByClassName('fullPost')[0];
+	let body = document.getElementsByTagName('body')[0];
+
+	let postBody = document.createElement('div');
+	postBody.className = 'postBody';
+
 	let header = document.createElement('h1');
+
 	let p = document.createElement('p');
 
 	header.textContent = addPostInput.value;
 	p.className = 'bodyContent';
 	p.textContent = addTextArea.value;
-	div.appendChild(header);
-	div.appendChild(p);
+	postBody.appendChild(header);
+	postBody.appendChild(p);
+	body.appendChild(postBody);
+
 	addPostInput.value = '';
 	addTextArea.value = '';
 });

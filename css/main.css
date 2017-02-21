@@ -44,7 +44,7 @@ table {
 /*CUSTOM STYLING*/
 nav img, p {
 	display: inline-block;
-	color: #008A53;
+	
 }
 
 p {
@@ -115,6 +115,14 @@ input[type=text] {
 
 .fullPost {
 	margin: 0 14em 1em 14em;
+}
+
+.postBody {
+	margin: 0 14em 1em 14em;
+	background-color: #6A5B5E;
+	border-radius: 3px;
+	color: #fff;
+	padding: .65em 1em;
 }
 
 .bodyContent {
