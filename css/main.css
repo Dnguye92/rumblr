@@ -57,6 +57,10 @@ nav {
 	font-weight: 700;
 }
 
+h3 {
+	font-weight: 700;
+}
+
 span {
 	color: #72C166;
 }
@@ -80,7 +84,6 @@ textarea[type=text] {
   	border-color: transparent;
   	color: #fff;
   	height: 10em;
-
 }
 
 input[type=text] {
@@ -99,7 +102,7 @@ input[type=text] {
   	color: #fff;
 }
 
-.addPost {
+.addPostButton {
 	color: white;
 	border-radius: 3px;
 	border: solid 1px;
