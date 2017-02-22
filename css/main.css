@@ -115,7 +115,7 @@ input[type=text] {
 
 .up {
 	color: white;
-	display: block;
+	display: inline-block;
 	border-radius: 3px;
 	border: solid 1px;
 	border-color: transparent;
@@ -127,7 +127,7 @@ input[type=text] {
 
 .down {
 	color: white;
-	display: block;
+	display: inline-block;
 	border-radius: 3px;
 	border: solid 1px;
 	border-color: transparent;
@@ -139,7 +139,7 @@ input[type=text] {
 
 .remove {
 	color: white;
-	display: block;
+	display: inline-block;
 	border-radius: 3px;
 	border: solid 1px;
 	border-color: transparent;

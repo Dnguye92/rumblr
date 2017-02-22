@@ -3,6 +3,7 @@ const addPostInput = document.querySelector('input.addPostInput');
 const addTextArea = document.querySelector('textarea.addPostInput');
 const addPostButton = document.querySelector('button.addPostButton');
 
+//event listener for posting functionality
 addPostButton.addEventListener('click', () => {
 	let body = document.getElementsByTagName('body')[0];
 
