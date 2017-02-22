@@ -153,8 +153,12 @@ input[type=text] {
 	margin: 0 14em 1em 14em;
 }
 
-.postBody {
+.buttonDiv {
 	margin: 0 14em 1em 14em;
+}
+
+.postBody {
+	margin: 0 14em 0.5em 14em;
 	background-color: #6A5B5E;
 	border-radius: 3px;
 	color: #fff;
