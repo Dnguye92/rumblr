@@ -2,6 +2,7 @@
 const addPostInput = document.querySelector('input.addPostInput');
 const addTextArea = document.querySelector('textarea.addPostInput');
 const addPostButton = document.querySelector('button.addPostButton');
+const newPost = document.querySelector('.postBody')
 
 //event listener for posting functionality
 addPostButton.addEventListener('click', () => {
@@ -53,6 +54,16 @@ body.appendChild(buttonDiv)
 
 addPostInput.value = '';
 addTextArea.value = '';
-});
 
 //create hide/show event listener for toggleButton
+// toggleButton.addEventListener('click', () => {
+// 	if(newPost.style.display == 'none') {
+// 		newPost.style.display == 'block';
+// 	} else {
+// 		toggleButton.textContent == 'Show';
+// 		newPost.style.display == 'none';
+// 	}
+// });
+
+});
+
