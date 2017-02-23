@@ -153,8 +153,21 @@ input[type=text] {
 	transition: all 0.2s ease-out;
 }
 
+.toggleButton {
+	color: white;
+	display: inline-block;
+	border-radius: 3px;
+	border: solid 1px;
+	border-color: transparent;
+	cursor: pointer;
+	background-color: #78B0AA;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	transition: all 0.2s ease-out;
+}
+
 .up:hover, .down:hover,
-.remove:hover, .addPostButton:hover {
+.remove:hover, .addPostButton:hover, .toggleButton:hover {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);

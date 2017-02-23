@@ -24,22 +24,29 @@ buttonDiv.className = 'buttonDiv'
 
 let up = document.createElement('button');
 up.className = 'up';
-up.innerHTML = 'Up';
+up.textContent = 'Up';
 
 let down = document.createElement('button');
 down.className = 'down';
-down.innerHTML = 'Down';
+down.textContent = 'Down';
 
 let remove = document.createElement('button');
 remove.className = 'remove';
-remove.innerHTML = 'Remove';
+remove.textContent = 'Remove';
 
+let toggleButton = document.createElement('button');
+toggleButton.className = 'toggleButton';
+toggleButton.textContent = 'Hide';
+
+//append the header and body of textarea to the body within a div
 postBody.appendChild(header);
 postBody.appendChild(p);
 
+//append all buttons to the buttonDiv
 buttonDiv.appendChild(up);
 buttonDiv.appendChild(down);
 buttonDiv.appendChild(remove);
+buttonDiv.appendChild(toggleButton);
 
 body.appendChild(postBody);
 body.appendChild(buttonDiv)
@@ -47,3 +54,5 @@ body.appendChild(buttonDiv)
 addPostInput.value = '';
 addTextArea.value = '';
 });
+
+//create hide/show event listener for toggleButton
