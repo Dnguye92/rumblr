@@ -23,7 +23,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: #F35E5E;
+	background-color: #C9C9C9;
 	color: #008A53;
 }
 ol, ul {
@@ -121,7 +121,7 @@ input[type=text] {
 	border: solid 1px;
 	border-color: transparent;
 	cursor: pointer;
-	background-color: #72C166;
+	background-color: #008852;
 	padding: 0.5em 1em;
 	margin: 0.5em 0.5em 0.5em 0;
 	transition: all 0.2s ease-out;
