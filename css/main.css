@@ -153,7 +153,7 @@ input[type=text] {
 	transition: all 0.2s ease-out;
 }
 
-.toggleButton {
+.showHide {
 	color: white;
 	display: inline-block;
 	border-radius: 3px;
@@ -167,7 +167,7 @@ input[type=text] {
 }
 
 .up:hover, .down:hover,
-.remove:hover, .addPostButton:hover, .toggleButton:hover {
+.remove:hover, .addPostButton:hover, .showHide:hover {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);

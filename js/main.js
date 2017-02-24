@@ -2,7 +2,6 @@
 const addPostInput = document.querySelector('input.addPostInput');
 const addTextArea = document.querySelector('textarea.addPostInput');
 const addPostButton = document.querySelector('button.addPostButton');
-const newPost = document.querySelector('.postBody')
 
 //event listener for posting functionality
 addPostButton.addEventListener('click', () => {
@@ -35,9 +34,9 @@ let remove = document.createElement('button');
 remove.className = 'remove';
 remove.textContent = 'Remove';
 
-let toggleButton = document.createElement('button');
-toggleButton.className = 'toggleButton';
-toggleButton.textContent = 'Hide';
+let showHide = document.createElement('button');
+showHide.className = 'showHide';
+showHide.textContent = 'Hide';
 
 //append the header and body of textarea to the body within a div
 postBody.appendChild(header);
@@ -47,7 +46,7 @@ postBody.appendChild(p);
 buttonDiv.appendChild(up);
 buttonDiv.appendChild(down);
 buttonDiv.appendChild(remove);
-buttonDiv.appendChild(toggleButton);
+buttonDiv.appendChild(showHide);
 
 body.appendChild(postBody);
 body.appendChild(buttonDiv)
@@ -56,14 +55,7 @@ addPostInput.value = '';
 addTextArea.value = '';
 
 //create hide/show event listener for toggleButton
-// toggleButton.addEventListener('click', () => {
-// 	if(newPost.style.display == 'none') {
-// 		newPost.style.display == 'block';
-// 	} else {
-// 		toggleButton.textContent == 'Show';
-// 		newPost.style.display == 'none';
-// 	}
-// });
+
 
 });
 
