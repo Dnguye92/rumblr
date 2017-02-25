@@ -22,6 +22,7 @@ p.textContent = addTextArea.value;
 let buttonDiv = document.createElement('div');
 buttonDiv.className = 'buttonDiv'
 
+//create buttons for div
 let up = document.createElement('button');
 up.className = 'up';
 up.textContent = 'Up';
@@ -55,7 +56,15 @@ addPostInput.value = '';
 addTextArea.value = '';
 
 //create hide/show event listener for toggleButton
-
+showHide.addEventListener('click', () => {
+	if(postBody.style.display == 'none') {
+		showHide.textcontent = 'Hide';
+		postBody.style.display = 'block';
+	} else {
+		showHide.textcontent = 'Show';
+		postBody.style.display = 'none';
+	}
+})
 
 });
 
