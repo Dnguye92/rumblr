@@ -39,6 +39,8 @@ let showHide = document.createElement('button');
 showHide.className = 'showHide';
 showHide.textContent = 'Hide';
 
+let postBodyDiv = postBody.querySelector('div');
+
 //append the header and body of textarea to the body within a div
 postBody.appendChild(header);
 postBody.appendChild(p);
@@ -55,14 +57,31 @@ body.appendChild(buttonDiv)
 addPostInput.value = '';
 addTextArea.value = '';
 
-//create hide/show event listener for toggleButton
+//create event listener for up, down, remove buttons
+postBodyDiv.addEventListener('click', (event) => {
+	if(event.target.tagName == 'BUTTON') {
+		if(event.target.className == 'remove') {
+			postBody.removeChild(postBodyDiv);
+		}
+	}
+
+})
+
+
+//create hide/show event listener for showHide button
 showHide.addEventListener('click', () => {
 	if(postBody.style.display == 'none') {
-		showHide.textcontent = 'Hide';
+		showHide.textContent = 'Hide';
 		postBody.style.display = 'block';
+		up.style.display = 'inline-block';
+		down.style.display = 'inline-block';
+		remove.style.display = 'inline-block';
 	} else {
-		showHide.textcontent = 'Show';
+		showHide.textContent = 'Show';
 		postBody.style.display = 'none';
+		up.style.display = 'none';
+		down.style.display = 'none';
+		remove.style.display = 'none';
 	}
 })
 
