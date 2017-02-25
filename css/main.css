@@ -149,7 +149,7 @@ input[type=text] {
 	cursor: pointer;
 	background-color: #BC464F;
 	padding: 0.5em 1em;
-	margin: 0.5em;
+	margin: 0.5em 0.5em 0.5em 0;
 	transition: all 0.2s ease-out;
 }
 
@@ -172,6 +172,10 @@ input[type=text] {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
+}
+
+.remove:focus, .addPostButton:focus, .showHide:focus {
+	outline: none;
 }
 
 .fullPost {

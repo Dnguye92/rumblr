@@ -44,8 +44,8 @@ postBody.appendChild(header);
 postBody.appendChild(p);
 
 //append all buttons to the buttonDiv
-buttonDiv.appendChild(up);
-buttonDiv.appendChild(down);
+// buttonDiv.appendChild(up);
+// buttonDiv.appendChild(down);
 buttonDiv.appendChild(remove);
 buttonDiv.appendChild(showHide);
 
@@ -65,20 +65,44 @@ remove.addEventListener('click', (event) => {
 	}
 })
 
+// up.addEventListener('click', (event) => {
+// 	if(event.target.tagName == 'BUTTON') {
+// 		if(event.target.className == 'up') {
+// 			let li = event.target.parentNode;
+// 			let prevLi = li.previousElementSibling;
+// 			let ul = li.parentNode;
+// 			if(prevLi) {
+// 				ul.insertBefore(li, prevLi);
+// 			}
+// 		}
+// 	}
+// })
+
+// down.addEventListener('click', (event) => {
+// 	if(event.target.className == 'down') {
+// 		let li = event.target.parentNode;
+// 		let nextLi = li.nextElementSibling;
+// 		let ul = li.parentNode;
+// 		if(nextLi) {
+// 			ul.insertBefore(nextLi, li);
+// 		}
+// 	}
+// })
 
 //create hide/show event listener for showHide button
 showHide.addEventListener('click', () => {
 	if(postBody.style.display == 'none') {
 		showHide.textContent = 'Hide';
 		postBody.style.display = 'block';
-		up.style.display = 'inline-block';
-		down.style.display = 'inline-block';
+		// up.style.display = 'inline-block';
+		// down.style.display = 'inline-block';
 		remove.style.display = 'inline-block';
 	} else {
 		showHide.textContent = 'Show';
+		showHide.style.margin = '0.5em 0.5em 0.5em 0';
 		postBody.style.display = 'none';
-		up.style.display = 'none';
-		down.style.display = 'none';
+		// up.style.display = 'none';
+		// down.style.display = 'none';
 		remove.style.display = 'none';
 	}
 })
