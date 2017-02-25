@@ -39,8 +39,6 @@ let showHide = document.createElement('button');
 showHide.className = 'showHide';
 showHide.textContent = 'Hide';
 
-let postBodyDiv = postBody.querySelector('div');
-
 //append the header and body of textarea to the body within a div
 postBody.appendChild(header);
 postBody.appendChild(p);
@@ -58,13 +56,13 @@ addPostInput.value = '';
 addTextArea.value = '';
 
 //create event listener for up, down, remove buttons
-postBodyDiv.addEventListener('click', (event) => {
+remove.addEventListener('click', (event) => {
 	if(event.target.tagName == 'BUTTON') {
 		if(event.target.className == 'remove') {
-			postBody.removeChild(postBodyDiv);
+			body.removeChild(postBody);
+			body.removeChild(buttonDiv);
 		}
 	}
-
 })
 
 
