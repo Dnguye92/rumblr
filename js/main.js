@@ -18,6 +18,10 @@ let p = document.createElement('p');
 p.className = 'bodyContent';
 p.textContent = addTextArea.value;
 
+//create div to append buttonDiv and postBody
+let fullPost = document.createElement('div');
+fullPost.className = 'fullPost';
+
 //create div for buttons
 let buttonDiv = document.createElement('div');
 buttonDiv.className = 'buttonDiv'
