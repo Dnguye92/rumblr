@@ -75,8 +75,8 @@ remove.addEventListener('click', (event) => {
 
 // up.addEventListener('click', (event) => {
 // 	if(event.target.tagName == 'BUTTON') {
-// 		if(event.target.className == 'up') {
-// 			let li = event.target.parentNode;
+// 		if(event.currentTarget.className == 'up') {
+// 			let li = event.currentTarget.parentNode;
 // 			let prevLi = li.previousElementSibling;
 // 			let ul = li.parentNode;
 // 			if(prevLi) {
@@ -87,8 +87,8 @@ remove.addEventListener('click', (event) => {
 // })
 
 // down.addEventListener('click', (event) => {
-// 	if(event.target.className == 'down') {
-// 		let li = event.target.parentNode;
+// 	if(event.currentTarget.className == 'down') {
+// 		let li = event.currentTarget.parentNode;
 // 		let nextLi = li.nextElementSibling;
 // 		let ul = li.parentNode;
 // 		if(nextLi) {
