@@ -68,8 +68,7 @@ addTextArea.value = '';
 remove.addEventListener('click', (event) => {
 	if(event.target.tagName == 'BUTTON') {
 		if(event.target.className == 'remove') {
-			body.removeChild(postBody);
-			body.removeChild(buttonDiv);
+			body.removeChild(newPost);
 		}
 	}
 })
