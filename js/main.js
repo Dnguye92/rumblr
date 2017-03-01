@@ -19,8 +19,8 @@ p.className = 'bodyContent';
 p.textContent = addTextArea.value;
 
 //create div to append buttonDiv and postBody
-let fullPost = document.createElement('div');
-fullPost.className = 'fullPost';
+let newPost = document.createElement('div');
+newPost.className = 'newPost';
 
 //create div for buttons
 let buttonDiv = document.createElement('div');
@@ -53,8 +53,13 @@ postBody.appendChild(p);
 buttonDiv.appendChild(remove);
 buttonDiv.appendChild(showHide);
 
-body.appendChild(postBody);
-body.appendChild(buttonDiv)
+newPost.appendChild(postBody);
+newPost.appendChild(buttonDiv);
+
+body.appendChild(newPost);
+
+// body.appendChild(postBody);
+// body.appendChild(buttonDiv)
 
 addPostInput.value = '';
 addTextArea.value = '';
